@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              secondary: "#E76F511A",
+              textColor: "#111111",
+              textColorLight: "#111111B3",
+              bgColor: "#F9F7F3",
+              borderColor: "#1111114D",
+              borderColorLight: "#1111111A",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+            boxShadow: {
+              customCard: "0px 0px 4px 0px rgba(0, 0, 0, 0.15)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-lexend">
+    <header
+      class="max-w-screen bg-bgColor h-auto md:h-[137px] mb-20 sticky top-0 z-50"
+    >
+      <!-- Navbar Section Starts Here -->
+      <div
+        class="container mx-auto navbar h-auto md:h-[97px] flex flex-col items-center justify-center md:items-center md:justify-center md:flex-row"
+      >
+        <div class="navbar-start">
+          <a
+            href="/index.html"
+            class="btn bg-primary py-3 px-8 text-textColor text-xl font-normal rounded-lg"
+          >
+            Home
+          </a>
+        </div>
+        <div class="navbar-center">
+          <img alt="logo" src="./assets/logo.png" class="mr-3" />
+          <a class="text-xl md:text-4xl font-normal text-textColor">Donate Bangladesh</a>
+        </div>
+        <div class="navbar-end">
+          <span class="flex items-center">
+            <img src="./assets/coin.png" alt="coin icon" class="mr-2" />
+            <span class="text-textColorLight font-medium text-xl mr-1">5500 </span>
+            <span class="text-textColorLight font-medium text-xl">BDT</span>
+          </span>
+        </div>
+      </div>
+      <!-- Navbar Section Ends Here -->
+    </header>
+    <main class="container mx-auto mt-20">
+      <h1 class="text-3xl font-bold mb-8 text-center">
+        Frequently Asked Questions
+      </h1>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold">
+          What is the DOM in JavaScript?
+        </div>
+        <div class="collapse-content text-sm">
+          The Document Object Model (DOM) is a programming interface for web
+          documents. It represents the page so that programs can change the
+          document structure, style, and content. The DOM represents the
+          document as nodes and objects; that way, programming languages can
+          interact with the page.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          How do you select an element?
+        </div>
+        <div class="collapse-content text-sm">
+          The id selector uses the id attribute of an HTML element to select a
+          specific element. The id of an element is unique within a page, so the
+          id selector is used to select one unique element! To select an element
+          with a specific id, write a hash (#) character, followed by the id of
+          the element.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          What is a delegate at an event?
+        </div>
+        <div class="collapse-content text-sm">
+          As a delegate, you are responsible for actively participating in
+          sessions, listening to speakers, and contributing to the overall
+          success of the event. In addition to attending sessions, delegates
+          represent their organization or personal interests.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          What is DOM data manipulation?
+        </div>
+        <div class="collapse-content text-sm">
+          Description: DOM data manipulation (DOM-based) DOM data manipulation
+          arises when a script writes controllable data to a field within the
+          DOM that is used within the visible UI or client-side application
+          logic.
+        </div>
+      </div>
+    </main>
+    <footer
+      class="mt-20 max-w-screen h-8 lg:h-14 bg-bgColor fixed bottom-0 z-50 w-full"
+    ></footer>
+  </body>
+</html>

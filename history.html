@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              secondary: "#E76F511A",
+              textColor: "#111111",
+              textColorLight: "#111111B3",
+              bgColor: "#F9F7F3",
+              borderColor: "#1111114D",
+              borderColorLight: "#1111111A",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+            boxShadow: {
+              customCard: "0px 0px 4px 0px rgba(0, 0, 0, 0.15)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-lexend">
+    <header
+      class="max-w-screen bg-bgColor h-auto md:h-[137px] mb-20 sticky top-0 z-50"
+    >
+      <!-- Navbar Section Starts Here -->
+      <div
+        class="container mx-auto navbar h-auto md:h-[97px] flex flex-col items-center justify-center md:items-center md:justify-center md:flex-row"
+      >
+        <div class="navbar-start">
+          <a
+            href="/blog.html"
+            class="btn bg-primary py-3 px-8 text-textColor text-xl font-normal rounded-lg"
+          >
+            Blog
+          </a>
+        </div>
+        <div class="navbar-center">
+          <img alt="logo" src="./assets/logo.png" class="mr-3" />
+          <a class="text-xl md:text-4xl font-normal text-textColor"
+            >Donate Bangladesh</a
+          >
+        </div>
+        <div class="navbar-end">
+          <span class="flex items-center">
+            <img src="./assets/coin.png" alt="coin icon" class="mr-2" />
+            <span class="text-textColorLight font-medium text-xl mr-1"
+              >5500
+            </span>
+            <span class="text-textColorLight font-medium text-xl">BDT</span>
+          </span>
+        </div>
+      </div>
+      <!-- Navbar Section Ends Here -->
+    </header>
+    <main>
+      <!-- Buttons Section Starts Here -->
+      <div class="flex justify-center container mx-auto">
+        <button
+          id="button1"
+          class="btn mr-4 py-3 px-8 text-textColor text-xl font-normal rounded-lg"
+        >
+         Donation
+        </button>
+        <button
+          id="button2"
+          class="btn py-3 px-8 text-textColorLight text-xl font-medium rounded-lg border border-borderColor"
+        >
+         History
+        </button>
+      </div>
+      <!-- Buttons Section Ends Here -->
+
+      <!-- History Section Starts Here -->
+
+      <div
+        id="historyContainer"
+        class="mt-8 container mx-auto border p-4 md:p-8"
+      ></div>
+    </main>
+    <div class="container mx-auto my-8 flex justify-center">
+      <button
+        id="clearHistoryBtn"
+        class="mx-auto btn bg-red-600 py-3 px-8 text-white text-xl font-medium rounded-lg border border-borderColor ml-2"
+      >
+        Clear History
+      </button>
+    </div>
+
+    <!-- JavaScript Files -->
+
+    <script src="/assets/js/history.js"></script>
+    <script src="/assets/js/button-toggle-effect.js"></script>
+  </body>
+</html>
